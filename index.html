@@ -8,19 +8,45 @@
 <style>
    body{
       padding:50px 100px;
+      background-color: #000;
    }
- 
+   h1{
+    text-align: center;
+    color:#fff;
+   }
+   .container{
+        background-color: gray;
+        padding:50px;
+        text-align: center;
+   }
+   .input{
+        display: inline-block;
+        font-size: 30px;
+        font-weight: bold;
+        
+   }
+   .inp{
+     padding:10px;
+     text-align: center;
+     margin:10px;
+     width:250px;
+     font-size: 25px;
+     font-weight: bold;
+     border-radius: 20px;
+   }
+
+
 </style>
 <body>
     <h1>Temperature Converter</h1>
     <div class="container">
-       <div>
-        <label>Celsius</label>
-         <input type="number">
+       <div class="input ">
+        <label>Celsius</label><br>
+         <input type="number" value="0" id="celsius" class="inp">
        </div>
-       <div>
-        <label>Fahrenheit</label>
-         <input type="number">
+       <div class="input">
+        <label>Fahrenheit</label><br>
+         <input type="number" value="32" id="Fahrenheit" class="inp">
        </div>
     </div>
     
