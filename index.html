@@ -58,12 +58,14 @@
         let Fahrenheit = document.getElementById('Fahrenheit');
 
         celsius.addEventListener('input',function(){
-            console.log("changed");
+            let c = this.value;
+            let f = (c * 9/5) + 32;
+            Fahrenheit.value = f; 
         });
 
         Fahrenheit.addEventListener ('input',function(){
             console.log("changed");
-        })
+        });
     </script>
     
 
